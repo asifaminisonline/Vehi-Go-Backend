@@ -12,31 +12,26 @@ users = User.create!([
     name: 'Obi-Wan Kenobi',
     email: 'obiwan@jedi.com',
     password: 'obiwan',
-    role: 1
   },
   {
     name: 'Asoka Kai',
     email: 'asoka@jedi.com',
     password: 'obiwan',
-    role: 0
   },
   {
     name: 'Abel G',
     email: 'abel@gmail.com',
     password: '123456',
-    role: 0
   },
   {
     name: 'Aamir Khan',
     email: 'aamir@khan.com',
     password: '123456',
-    role: 1
   },
   {
     name: 'Milen',
     email: 'milen@gmail.com',
     password: '123456',
-    role: 0
   },
 ])
 
