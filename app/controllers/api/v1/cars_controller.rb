@@ -22,4 +22,17 @@ class Api::V1::CarsController < ApplicationController
             render json: { error: 'ERROR: Unable to create the car' }, status: :unprocessable_entity
           end
     end
+  
+   def destroy
+        @car.destroy
+    end
+
+
+    def set_car
+        @car = Car.find(params[:id])
+    end
+    
+    def car_params
+        params.require(:car).permit(:name, :color, :description, :available, :price,  :image )  
+    end
 end
