@@ -30,4 +30,13 @@ class Api::V1::ReservationsController < ApplicationController
             render json: { error: ' Unable to cancel the booking' }, status: :unprocessable_entity
         end
     end
+  
+  def set_reservation 
+        @reservation = Reservation.find(params[:id])
+    end
+
+    def reserve_params
+        params.require(:reservation).permit(:picking_date, :return_date, :car_id)
+        .merge(user_id: current_user.id)
+    end
 end
