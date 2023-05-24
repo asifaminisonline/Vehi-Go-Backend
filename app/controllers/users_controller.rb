@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  skip_before_action :authenticate_request, only: [:create]
+  # skip_before_action :authenticate_request, only: [:create]
   before_action :set_user, only: %i[show destroy]
   before_action :authenticate_user!
 
@@ -41,7 +41,7 @@ class UsersController < ApplicationController
   end
 
   def user_params
-    params.permit(:username, :email, :password)
+    params.permit(:name, :email, :password)
   end
 
   def set_user
