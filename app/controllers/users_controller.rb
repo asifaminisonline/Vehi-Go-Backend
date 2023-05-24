@@ -1,16 +1,17 @@
 class UsersController < ApplicationController
-  skip_before_action :authenticate_request, only: [:create]
+  # skip_before_action :authenticate_request, only: [:create]
   before_action :set_user, only:[:show, :destroy]
+  before_action :authenticate_user!
 
   #Get /users
   def index
     @users = User.all
-    render json: @users, status: :ok
+    render json: current_user, status: :ok
   end
 
   #GET /users/{username}
   def show
-    render json: @user, status: :ok
+    render json: {user: @user}, status: :ok
   end
 
   def new
@@ -36,6 +37,7 @@ class UsersController < ApplicationController
   def update
     unless @user.update(user_params)
       render json: {errors: @user.errors.full_messages}, status: :unprocessable_entity
+    end
   end
 
 
@@ -46,4 +48,5 @@ class UsersController < ApplicationController
   def set_user
     @user = User.find(params[:id])
   end
+
 end

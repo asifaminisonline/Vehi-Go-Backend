@@ -82,6 +82,18 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    devise-jwt (0.11.0)
+      devise (~> 4.0)
+      warden-jwt_auth (~> 0.8)
+    dry-auto_inject (1.0.1)
+      dry-core (~> 1.0)
+      zeitwerk (~> 2.6)
+    dry-configurable (1.0.1)
+      dry-core (~> 1.0, < 2)
+      zeitwerk (~> 2.6)
+    dry-core (1.0.0)
+      concurrent-ruby (~> 1.0)
+      zeitwerk (~> 2.6)
     erubi (1.12.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
@@ -103,7 +115,7 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.2)
     minitest (5.18.0)
-    msgpack (1.7.0)
+    msgpack (1.7.1)
     net-imap (0.3.4)
       date
       net-protocol
@@ -114,7 +126,7 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.9)
-    nokogiri (1.15.0-x64-mingw-ucrt)
+    nokogiri (1.15.1-x64-mingw-ucrt)
       racc (~> 1.4)
     orm_adapter (0.5.0)
     pg (1.5.3-x64-mingw-ucrt)
@@ -122,6 +134,8 @@ GEM
       nio4r (~> 2.0)
     racc (1.6.2)
     rack (2.2.7)
+    rack-cors (2.0.1)
+      rack (>= 2.0.0)
     rack-test (2.1.0)
       rack (>= 1.3)
     rails (7.0.4.3)
@@ -151,7 +165,7 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
-    reline (0.3.3)
+    reline (0.3.4)
       io-console (~> 0.5)
     responders (3.1.0)
       actionpack (>= 5.2)
@@ -164,6 +178,11 @@ GEM
       tzinfo (>= 1.0.0)
     warden (1.2.9)
       rack (>= 2.0.9)
+    warden-jwt_auth (0.8.0)
+      dry-auto_inject (>= 0.8, < 2)
+      dry-configurable (>= 0.13, < 2)
+      jwt (~> 2.1)
+      warden (~> 1.2)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -178,9 +197,11 @@ DEPENDENCIES
   bootsnap
   debug
   devise
+  devise-jwt
   jwt
   pg (~> 1.1)
   puma (~> 5.0)
+  rack-cors
   rails (~> 7.0.4, >= 7.0.4.3)
   tzinfo-data
 
@@ -188,4 +209,4 @@ RUBY VERSION
    ruby 3.1.3p185
 
 BUNDLED WITH
-   2.4.4
+   2.4.13
