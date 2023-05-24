@@ -5,13 +5,13 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable,
          :jwt_authenticatable, jwt_revocation_strategy: self
- validates :name, presence: true
+  validates :name, presence: true
 
- has_many :reservations, dependent: :destroy
- has_many :cars, through: :reservations
+  has_many :reservations, dependent: :destroy
+  has_many :cars, through: :reservations
 
- def jwt_payload
-  super
- end
- 
+  def jwt_payload
+    super
+    method
+  end
 end
