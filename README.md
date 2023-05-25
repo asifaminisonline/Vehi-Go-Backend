@@ -1,42 +1,3 @@
-# curriculum-databases-projects-template
-
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
-
-
-## Getting Started
-
-This repository includes files with plain SQL that can be used to recreate a database:
-
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
-
-<a name="readme-top"></a>
-
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-After you're finished please remove all the comments and instructions!
--->
-
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -63,29 +24,22 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Exocars-Backend] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
 
-**[your_project__name]** is a...
+**[Exocars-Backend]** is a Rails API backend for [Exocars](https://github.com/Bludidi/Exocars-front-end) project.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
+![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?style=plastic&logo=ruby&logoColor=white)
+![Rails](https://img.shields.io/badge/rails-%23CC0000.svg?style=plastic&logo=ruby-on-rails&logoColor=white) 
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=plastic&logo=postgresql&logoColor=white)
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="https://rubyonrails.org/">Rails</a></li>
   </ul>
 </details>
 
@@ -96,109 +50,86 @@ After you're finished please remove all the comments and instructions!
   </ul>
 </details>
 
+
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Captures data from the frontend and stores it]**
+- **[Renders data to the client side when quiries are made]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
+## Link to the client side
+[Exocars](https://github.com/Bludidi/Exocars-front-end)
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## Kanban board
+[Link to the Kanban Board](https://github.com/users/tarikbouari/projects/4)
+![image](https://github.com/tarikbouari/Exocars-Backend/assets/86472119/5f88e793-8a71-4c09-be48-bbf31e7ebaf7)
 
-> Add a link to your deployed project.
-
-- [Live Demo Link](<replace-with-your-deployment-URL>)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
+- Computer that's connected to the internet.
+- Get Ruby installed
+- Git and Rails installed 
+- Code editor (preferebly VS Code)
 
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
 
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone https://github.com/tarikbouari/Exocars-Backend.git
+  cd Exocars-Backend
 ```
---->
+
 
 ### Install
 
 Install this project with:
 
-<!--
-Example command:
 
 ```sh
-  cd my-project
-  gem install
+  bundle install
+  rails db:create
+  rails db:migrate
+  rails db:seed
 ```
---->
+
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
+
 
 ```sh
-  rails server
+  rails server # to start server
 ```
---->
+
 
 ### Run tests
 
 To run tests, run the following command:
 
-<!--
-Example command:
+
 
 ```sh
-  bin/rails test test/models/article_test.rb
+ bundle exec rspec
+ rspec .
 ```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -206,33 +137,45 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
-👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Tarike Bouari** <br /><br />
+<a href="https://github.com/tarikbouari">
+  <img src="https://img.shields.io/github/followers/tarikbouari?label=Follow%20%40tarikbouari&style=social" alt="GitHub Follow">
+</a> <br />
+<a href="https://twitter.com/tarikbouari">
+  <img src="https://img.shields.io/twitter/follow/tarikbouari?label=Follow%20%40tarikbouari&style=social" alt="Twitter Follow">
+</a> <br />
+<a href="https://www.linkedin.com/in/tarikbouari">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=social&logo=linkedin&logoColor=blue" alt="LinkedIn">
+</a> <br /> <br />
 
-👤 **Author2**
+👤 **Asif Amin**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+<a href="https://github.com/asifaminisonline">
+  <img src="https://img.shields.io/github/followers/asifaminisonline?label=Follow%20%40asifaminisonline&style=social" alt="GitHub Follow">
+</a> <br />
+
+<a href="https://twitter.com/AminAmi53306702">
+  <img src="https://img.shields.io/twitter/follow/AminAmi53306702?label=Follow%20%40AminAmi53306702&style=social" alt="Twitter Follow">
+</a> <br /><br /><br />
+
+![my profile](https://avatars.githubusercontent.com/u/86472119?s=40&v=4) **Brian Buntu Ludidi** <br />
+
+<a href="https://github.com/Bludidi">
+  <img src="https://img.shields.io/github/followers/Bludidi?label=Follow%20%40Bludidi&style=social" alt="GitHub Follow">
+</a> <br />
+
+<a href="https://twitter.com/BB_Ludidi">
+  <img src="https://img.shields.io/twitter/follow/BB_Ludidi?label=Follow%20%40BB_Ludidi&style=social" alt="Twitter Follow">
+</a> <br />
+
+<a href="https://www.linkedin.com/in/brian-ludidi-92754174">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=social&logo=linkedin&logoColor=blue" alt="LinkedIn">
+</a> <br /> <br /><br />
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
-
-## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 
@@ -248,9 +191,8 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
 
-If you like this project...
+If you like this project show love with ⭐️.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -258,27 +200,11 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
 
-I would like to thank...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
+We would like to thank Microverse for a wonderful curriculum and our peers for outstanding support throughout the journey.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- LICENSE -->
 
@@ -286,6 +212,3 @@ I would like to thank...
 
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
