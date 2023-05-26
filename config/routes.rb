@@ -4,20 +4,18 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
   }
 
-  # Defines the root path route ("/")
-  # root "users#index"
-
-  resources :users
-  get 'users', to: 'users#index'
-
+  # API routes
   namespace :api do
     namespace :v1 do
-
-      resources :cars
+      resources :users do
+        # get 'users', to: 'users#index'
+        resources :reservations, only: [:index, :create, :destroy] 
+        # get 'reservations', to: 'reservations#index' 
+      end
+      resources :cars, only: [:index, :show, :create, :update]
       get 'cars', to:'cars#index'
       get 'car', to: 'cars#show'
-
-      resources :reservation
+      
     end
   end
 
