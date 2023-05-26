@@ -4,7 +4,7 @@ class Api::V1::CarsController < ApplicationController
 
   def index
     @cars = Car.all
-    render json:  @cars , status: :ok
+    render json: @cars, status: :ok
   end
 
   def show
@@ -29,7 +29,7 @@ class Api::V1::CarsController < ApplicationController
   end
 
   def set_car
-    @car = Car.find(params[:id])  
+    @car = Car.find(params[:id])
   end
 
   def car_params
