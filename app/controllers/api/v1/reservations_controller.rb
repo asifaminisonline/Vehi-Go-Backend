@@ -1,9 +1,11 @@
 class Api::V1::ReservationsController < ApplicationController
-  before_action :authenticate_user!, only: %i[create destroy]
-  before_action :set_reservation, only: %i[index destroy]
+  before_action :authenticate_user!, only: %i[destroy]
+  before_action :set_reservation,  only: %i[destroy]
+  before_action :set_user, only: %i[create update destroy]
 
   def index
-    @reservations = current_user.reservation.include(:cars).order(id: :desc)
+    @user = User.find(params[:user_id])
+    @reservations = @user.reservations.includes(:car).order(picking_date: :desc)
     render json: @reservations, status: :ok
   end
 
@@ -35,8 +37,11 @@ class Api::V1::ReservationsController < ApplicationController
     @reservation = Reservation.find(params[:id])
   end
 
+  def set_user
+    @user = User.find(params[:user_id])
+  end
+
   def reserve_params
-    params.require(:reservation).permit(:picking_date, :return_date, :car_id)
-      .merge(user_id: current_user.id)
+    params.require(:reservation).permit(:picking_date, :car_id, :user_id)
   end
 end
