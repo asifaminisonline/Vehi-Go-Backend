@@ -22,7 +22,7 @@ class Api::V1::CarsController < ApplicationController
     else
       render json: { error: 'ERROR: Unable to create the car' }, status: :unprocessable_entity
     end
-  end 
+  end
 
   def update
     if @car.update(car_params)
