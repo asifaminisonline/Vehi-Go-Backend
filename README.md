@@ -76,7 +76,7 @@ After you're finished please remove all the comments and instructions!
 > Describe the tech stack and include only the relevant sections that apply to your project.
 
 <details>
-  <summary>Client</summary>
+  <summary>Client side</summary>
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
   </ul>
