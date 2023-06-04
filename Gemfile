@@ -24,6 +24,8 @@ gem 'devise-jwt'
 
 gem 'rubocop', '>= 1.0', '< 2.0'
 
+gem 'sprockets-rails'
+
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
 
