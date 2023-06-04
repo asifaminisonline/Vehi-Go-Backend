@@ -12,7 +12,7 @@ Rails.application.routes.draw do
         resources :reservations, only: [:index, :create, :destroy] 
         # get 'reservations', to: 'reservations#index' 
       end
-      resources :cars, only: [:index, :show, :create, :update]
+      resources :cars, only: [:index, :show, :create, :update, :destroy]
       get 'cars', to:'cars#index'
       get 'car', to: 'cars#show'
       

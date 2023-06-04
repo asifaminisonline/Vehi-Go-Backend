@@ -1,5 +1,5 @@
 class Api::V1::CarsController < ApplicationController
-  before_action :authenticate_user!, only: %i[destroy]
+  # before_action :authenticate_user!, only: %i[destroy]
   before_action :set_car, only: %i[destroy show]
 
   def index

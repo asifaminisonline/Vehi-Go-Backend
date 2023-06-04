@@ -1,5 +1,4 @@
 class Api::V1::ReservationsController < ApplicationController
-  before_action :authenticate_user!, only: %i[destroy]
   before_action :set_reservation, only: %i[destroy]
   before_action :set_user, only: %i[create update destroy]
 
