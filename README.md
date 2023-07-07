@@ -26,14 +26,14 @@
 
 # 📖 [Exocars-Backend] <a name="about-project"></a>
 
-
 **[Exocars-Backend]** is a Rails API backend for [Exocars](https://github.com/Bludidi/Exocars-front-end) project.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
+
 ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?style=plastic&logo=ruby&logoColor=white)
-![Rails](https://img.shields.io/badge/rails-%23CC0000.svg?style=plastic&logo=ruby-on-rails&logoColor=white) 
+![Rails](https://img.shields.io/badge/rails-%23CC0000.svg?style=plastic&logo=ruby-on-rails&logoColor=white)
 ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=plastic&logo=postgresql&logoColor=white)
 
 <details>
@@ -50,11 +50,9 @@
   </ul>
 </details>
 
-
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-
 
 - **[Captures data from the frontend and stores it]**
 - **[Renders data to the client side when quiries are made]**
@@ -62,12 +60,13 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Link to the client side
+
 [Exocars](https://github.com/Bludidi/Exocars-front-end)
 
 ## Kanban board
+
 [Link to the Kanban Board](https://github.com/users/tarikbouari/projects/4)
 ![image](https://github.com/tarikbouari/Exocars-Backend/assets/86472119/5f88e793-8a71-4c09-be48-bbf31e7ebaf7)
-
 
 <!-- GETTING STARTED -->
 
@@ -78,16 +77,15 @@ To get a local copy up and running, follow these steps.
 ### Prerequisites
 
 In order to run this project you need:
+
 - Computer that's connected to the internet.
 - Get Ruby installed
-- Git and Rails installed 
+- Git and Rails installed
 - Code editor (preferebly VS Code)
-
 
 ### Setup
 
 Clone this repository to your desired folder:
-
 
 ```sh
   cd my-folder
@@ -95,11 +93,9 @@ Clone this repository to your desired folder:
   cd Exocars-Backend
 ```
 
-
 ### Install
 
 Install this project with:
-
 
 ```sh
   bundle install
@@ -108,23 +104,17 @@ Install this project with:
   rails db:seed
 ```
 
-
 ### Usage
 
 To run the project, execute the following command:
-
-
 
 ```sh
   rails server # to start server
 ```
 
-
 ### Run tests
 
 To run tests, run the following command:
-
-
 
 ```sh
  bundle exec rspec
@@ -137,17 +127,15 @@ To run tests, run the following command:
 
 ## 👥 Authors <a name="authors"></a>
 
-
-
 👤 **Tarike Bouari** <br /><br />
 <a href="https://github.com/tarikbouari">
-  <img src="https://img.shields.io/github/followers/tarikbouari?label=Follow%20%40tarikbouari&style=social" alt="GitHub Follow">
+<img src="https://img.shields.io/github/followers/tarikbouari?label=Follow%20%40tarikbouari&style=social" alt="GitHub Follow">
 </a> <br />
 <a href="https://twitter.com/tarikbouari">
-  <img src="https://img.shields.io/twitter/follow/tarikbouari?label=Follow%20%40tarikbouari&style=social" alt="Twitter Follow">
+<img src="https://img.shields.io/twitter/follow/tarikbouari?label=Follow%20%40tarikbouari&style=social" alt="Twitter Follow">
 </a> <br />
 <a href="https://www.linkedin.com/in/tarikbouari">
-  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=social&logo=linkedin&logoColor=blue" alt="LinkedIn">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=social&logo=linkedin&logoColor=blue" alt="LinkedIn">
 </a> <br /> <br />
 
 👤 **Asif Amin**
@@ -176,7 +164,6 @@ To run tests, run the following command:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
@@ -191,7 +178,6 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-
 If you like this project show love with ⭐️.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -200,15 +186,12 @@ If you like this project show love with ⭐️.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-
 We would like to thank Microverse for a wonderful curriculum and our peers for outstanding support throughout the journey.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
