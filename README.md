@@ -20,7 +20,7 @@
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
 - [❓ FAQ](#faq)
-- [📝 License](#license)
+- [📝 License](#license).
 
 <!-- PROJECT DESCRIPTION -->
 
